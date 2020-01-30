@@ -1,0 +1,27 @@
+type Query {
+  getSidebar: [SideBar!]!
+  getAssignment: [String!]!
+}
+
+type SideBar {
+  videos: [Videos!]!
+  reading: [Reading!]!
+  objectives: [String!]!
+  example: Example!
+  due: String!
+}
+
+type Videos {
+  url: String
+  title: String!
+}
+
+type Reading {
+  title: String!
+  url: String!
+}
+
+type Example {
+  title: String!
+  url: String!
+}
